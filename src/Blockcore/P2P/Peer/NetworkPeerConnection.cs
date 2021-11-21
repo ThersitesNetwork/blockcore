@@ -202,7 +202,7 @@ namespace Blockcore.P2P.Peer
                 this.asyncProvider.Signals.Publish(new PeerConnectionAttemptFailed(false, endPoint, ex.Message));
                 this.logger.LogDebug("Error connecting to '{0}', exception message: {1}", endPoint, ex.Message);
                 this.logger.LogTrace("(-)[UNHANDLED_EXCEPTION]");
-                throw ex;
+                throw;
             }
         }
 

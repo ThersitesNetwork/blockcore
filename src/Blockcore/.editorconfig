@@ -35,3 +35,6 @@ dotnet_analyzer_diagnostic.severity = none
 [NBitcoin/**.cs]
 dotnet_analyzer_diagnostic.severity = none
 
+
+# SYSLIB0021: Type or member is obsolete
+dotnet_diagnostic.SYSLIB0021.severity = silent
